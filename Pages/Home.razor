@@ -1,0 +1,14 @@
+﻿@page "/"
+
+@using Blazor.Extensions
+@using Blazor.Extensions.Canvas
+@using Blazor.Extensions.Canvas.Canvas2D
+@using Models;
+@inject IJSRuntime JsRuntime;
+<PageTitle>Home</PageTitle>
+
+<div>Hello, world!</div>
+
+<div id="canvasHolder" style="position: fixed; width: 300px; height: 200px; overflow: hidden; border: 1px solid #000;">
+    <BECanvas Width="300" Height="200" @ref="CanvasRef"></BECanvas>
+</div>
